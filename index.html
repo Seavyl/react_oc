@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Démo</title>
+</head>
+<body>
+    <div id="root"> Bonjour </div>
+    <script 
+    crossorigin 
+    src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script 
+crossorigin 
+src="https://unpkg.com/react-dom@18/umd/react-dom.development.js">
+    </script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js">
+
+    </script>
+    <script type="text/babel">
+        
+      
+
+        const Banner =()=>{
+            const title ="La maison jungle"
+           return ( <h1>{title.toUpperCase()}</h1>
+                )
+        }
+        
+        const Cart=()=>{
+            const monsteraPrice = 8
+            const ivyPrice = 10
+            const flowerPrice = 15
+            return( <div><h2>Panier</h2>
+             <ul>
+                <li>Monstera :{monsteraPrice}€</li>
+                <li>Lierre :{ivyPrice}€</li>
+                <li>fleurs :{flowerPrice}€</li>
+            </ul>
+            Total :{monsteraPrice +ivyPrice +flowerPrice}€
+                    </div>
+            )
+        }
+        
+        ReactDOM.render(<div>
+            <Banner />
+            <Cart />
+        </div>, document.getElementById('root'))
+        
+    </script>
+   
+</body>
+</html>
