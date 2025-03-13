@@ -5,8 +5,8 @@ function Cart() {
 	const ivyPrice = 10
 	const flowerPrice = 15
 	return (
-		<div>
-			<h2 className="lmj-cart">Panier</h2>
+		<div className='lmj-cart'>
+			<h2>Panier</h2>
 			<ul>
 				<li>Monstera : {monsteraPrice}€</li>
 				<li>Lierre : {ivyPrice}€</li>
