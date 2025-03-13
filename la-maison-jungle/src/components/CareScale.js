@@ -11,8 +11,10 @@ function CareScale({ scaleValue, careType }) {
 
 )
 
-    return (
+    return(
+      
         <div>
+        
             {range.map((rangeElem) => scaleValue >= rangeElem ? <span key={rangeElem.toString()}>{scaleType}</span> : null
             )}
         </div>
